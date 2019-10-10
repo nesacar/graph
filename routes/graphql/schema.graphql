@@ -30,6 +30,7 @@ type Query{
     user (id: Int! @eq): User @find
     posts: [Post] @all
     post (id: Int! @eq): Post @find
+    latestPost: Post!
 }
 
 type Mutation {

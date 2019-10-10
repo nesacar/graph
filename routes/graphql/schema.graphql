@@ -26,8 +26,18 @@ type Comment{
 }
 
 type Query{
+    users: [User] @all
+    user (id: Int! @eq): User @find
     posts: [Post] @all
     post (id: Int! @eq): Post @find
+}
+
+type Mutation {
+    createUser(
+        name: String! @rules(apply: ["required", "min:4"]),
+        email: String! @rules(apply: ["required", "email", "unique:users"]),
+        password: String! @rules(apply: ["required", "min:4"]) @bcrypt
+    ): User! @create
 }
 
 

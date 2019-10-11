@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef4c511a-411c-4741-8948-bafd1223cfad" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/graphql/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/routes/graphql/schema.graphql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,20 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="schema.graphql" pinned="false" current-in-tab="false">
+      <file leaf-file-name="schema.graphql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/graphql/schema.graphql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+            <state relative-caret-position="748">
+              <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SomeComplexQuery.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SomeComplexQuery.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/GraphQL/Queries/SomeComplexQuery.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="79" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
+            <state relative-caret-position="425">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#44#57#0#PHP" expanded="true" />
               </folding>
@@ -73,8 +72,8 @@
         <option value="$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/BooksTableSeeder.php" />
         <option value="$PROJECT_DIR$/storage/logs/laravel-2019-10-11.log" />
-        <option value="$PROJECT_DIR$/routes/graphql/schema.graphql" />
         <option value="$PROJECT_DIR$/app/Http/GraphQL/Queries/SomeComplexQuery.php" />
+        <option value="$PROJECT_DIR$/routes/graphql/schema.graphql" />
       </list>
     </option>
   </component>
@@ -196,7 +195,7 @@
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-cors" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="818" />
     <option name="y" value="22" />
     <option name="width" value="984" />
@@ -296,15 +295,16 @@
       <workItem from="1570709028589" duration="584000" />
       <workItem from="1570710493507" duration="5448000" />
       <workItem from="1570793273037" duration="5004000" />
-      <workItem from="1570803202121" duration="697000" />
+      <workItem from="1570803202121" duration="1862000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11733000" />
+    <option name="totallyTimeSpent" value="12898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -513,20 +513,20 @@
     <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-10-11.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/graphql/schema.graphql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/GraphQL/Queries/SomeComplexQuery.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="79" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#44#57#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/graphql/schema.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
         </state>
       </provider>
     </entry>

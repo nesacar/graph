@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-    protected $fillable = [];
+    protected $fillable = ['title'];
 
-    public function books(){
+    public function books()
+    {
         return $this->hasMany(Book::class);
     }
 }

@@ -1,6 +1,33 @@
 """This is a custom built-in Scalar type from LightHouse. It handles Carbon dates"""
 scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
 
+type Query{
+    users: [User!]! @paginate(type: "paginator", model: "App\\User")
+    user (id: ID @eq): User @find(model: "App\\User")
+
+    books: [Book] @all
+    book(id: ID @eq): Book @find
+    booksByFeatured(featured: Boolean! @eq): [Book] @all
+    someComplexQuery(search: String!): [Book]
+
+    categories: [Category] @all
+    category(id: ID @eq): Category @find
+}
+
+type Mutation {
+    createUser(
+        name: String! @rules(apply: ["required", "min:4"]),
+        email: String! @rules(apply: ["required", "email", "unique:users"]),
+    ): User @create(model: "App\\User")
+    updateUser(
+        id: ID @rules(apply: ["required"])
+        name: String! @rules(apply: ["required", "min:4"]),
+        email: String! @rules(apply: ["email"]),
+    ): User @update(model: "App\\ser")
+    deleteUser(
+        id: ID @rules(apply: ["required"])
+    ): User @delete(model: "App\\User")
+}
 
 type User {
     id: ID!
@@ -8,38 +35,21 @@ type User {
     email: String!
     created_at: DateTime!
     updated_at: DateTime!
-    posts: [Post] @hasMany
 }
 
-type Post {
+type Category {
     id: ID!
     title: String!
-    content: String!
-    user: User! @belongsTo
-    comments: [Comment] @hasMany
+    books: [Book] @hasMany
 }
 
-type Comment{
+type Book {
     id: ID!
-    reply: String!
-    post: Post! @belongsTo
+    title: String!
+    author: String!
+    image: String
+    link: String
+    description: String
+    featured: Boolean
+    category: Category! @belongsTo
 }
-
-type Query{
-    users: [User] @all
-    user (id: Int! @eq): User @find
-    posts: [Post] @all
-    post (id: Int! @eq): Post @find
-    latestPost: Post!
-}
-
-type Mutation {
-    createUser(
-        name: String! @rules(apply: ["required", "min:4"]),
-        email: String! @rules(apply: ["required", "email", "unique:users"]),
-        password: String! @rules(apply: ["required", "min:4"]) @bcrypt
-    ): User! @create
-}
-
-
-

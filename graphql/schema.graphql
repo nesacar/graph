@@ -20,6 +20,7 @@ type Mutation {
     createUser(
         name: String! @rules(apply: ["required", "min:4"]),
         email: String! @rules(apply: ["required", "email", "unique:users"]),
+        password: String! @rules(apply: ["required"]),
     ): User @create(model: "App\\User")
     updateUser(
         id: ID @rules(apply: ["required"])
